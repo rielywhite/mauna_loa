@@ -23,9 +23,9 @@ def plot_df(mauna_df):
     fig.set_size_inches(12,8)
     
     plt.plot(mauna_df.years_since,mauna_df.C02, color='m')
-    plt.title('C02 recorded levels vs start of C02 observations')
-    plt.xlabel('recorded years since 1958')
-    plt.ylabel('C02 levels recorded')
+    plt.title('C02 recorded levels vs start of C02 observations',fontsize=16)
+    plt.xlabel('recorded years since 1958',fontsize=14)
+    plt.ylabel('C02 levels recorded',fontsize=14)
     
     ax=plt.gca()
     ax.spines['top'].set_visible(False)
