@@ -7,15 +7,15 @@ def get_df(filename):
     INPUT:filename e.g. mauna_loa.csv
     OUTPUT: Pandas Dataframe
     '''
-    mauna_df=pd.read_csv('/home/whiteri/hw/hw07/mauna_loa/mauna_loa.csv')
-    mauna_df
+    mauna_df=pd.read_csv(filename)
+    mauna_df['years_since']=mauna_df['year']-mauna_df['year'][0]
+    mauna_df=mauna_df['years_since','C02']
+    return mauna_df
    
 
-def plot_df(df):
+def plot_df(mauna_df):
     '''
     INPUT: Pandas DataFrame
     OUTPUT: handle to plot axis
     '''
-    
-    (mauna_df['decimal_date'][0])
-    mauna_df.plt(x="decimal_date",y='CO2')
+    ...
