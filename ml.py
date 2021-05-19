@@ -18,5 +18,5 @@ def plot_df(mauna_df):
     INPUT: Pandas DataFrame
     OUTPUT: handle to plot axis
     '''
-    plt.plot(mauna_df['years_since','C02'])
+    plt.plot(mauna_df.years_since,mauna_df.C02)
     plt.title('C02 recorded levels vs start of C02 observations')
