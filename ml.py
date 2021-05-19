@@ -17,4 +17,5 @@ def plot_df(df):
     OUTPUT: handle to plot axis
     '''
     
-    print('hello')
+    (mauna_df['decimal_date'][0])
+    mauna_df.plt(x="decimal_date",y='CO2')
