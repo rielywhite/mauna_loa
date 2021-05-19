@@ -7,7 +7,8 @@ def get_df(filename):
     INPUT:filename e.g. mauna_loa.csv
     OUTPUT: Pandas Dataframe
     '''
-    ...
+    mauna_df=pd.read_csv('/home/whiteri/hw/hw07/mauna_loa/mauna_loa.csv')
+    mauna_df
    
 
 def plot_df(df):
