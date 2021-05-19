@@ -9,7 +9,7 @@ def get_df(filename):
     '''
     mauna_df=pd.read_csv(filename)
     mauna_df['years_since']=mauna_df['year']-mauna_df['year'][0]
-    mauna_df=mauna_df['years_since','C02']
+    mauna_df=mauna_df[['years_since','C02']]
     return mauna_df
    
 
