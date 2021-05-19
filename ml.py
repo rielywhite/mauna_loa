@@ -18,5 +18,17 @@ def plot_df(mauna_df):
     INPUT: Pandas DataFrame
     OUTPUT: handle to plot axis
     '''
-    plt.plot(mauna_df.years_since,mauna_df.C02)
+    
+    fig=plt.figure()
+    fig.set_size_inches(12,8)
+    
+    plt.plot(mauna_df.years_since,mauna_df.C02, color='m')
     plt.title('C02 recorded levels vs start of C02 observations')
+    plt.xlabel('recorded years since 1958')
+    plt.ylabel('C02 levels recorded')
+    
+    ax=plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+
